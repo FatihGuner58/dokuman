@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let boy = parseFloat(prompt("Lütfen boyunuzu giriniz (metre cinsinden giriniz)"));
+        let kilo = parseFloat(prompt("Lütfen kilonuzu giriniz (kilogram cinsinden giriniz)"));
+
+        let sonuç = kilo / (boy * boy);
+
+        if (sonuç < 18.5) {
+            console.log("Çok Zayıf");
+        } else if (sonuç >= 18.5 && sonuç < 20) {
+            console.log("Zayıf");
+        } else if (sonuç >= 20 && sonuç < 25) {
+            console.log("Normal");
+        } else if (sonuç >= 25 && sonuç < 29.9) {
+            console.log("Kilolu");
+        } else if (sonuç >= 30 && sonuç < 39.9) {
+            console.log("Çok kilolu");
+        } else if (sonuç >= 40) {
+            console.log("Obezsiniz");
+        }
+    </script>
+</body>
+</html>

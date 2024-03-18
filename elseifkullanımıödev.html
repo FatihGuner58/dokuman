@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       const dogruKullaniciAdi = "fatih";
+         const dogruSifre = "fatih58";
+         let girisHakki = 3;
+ 
+         const kullaniciAdi = prompt("Kullanıcı Adı:");
+         const sifre = prompt("Şifre:");
+         if (kullaniciAdi === dogruKullaniciAdi && sifre === dogruSifre) {
+             console.log("Hoşgeldiniz");
+         } else {
+         girisHakki--;
+             if (kullaniciAdi !== dogruKullaniciAdi && sifre !== dogruSifre) {
+             console.log("Kullanıcı adınızı ve şifrenizi hatalı girdiniz.");
+         } else if (kullaniciAdi !== dogruKullaniciAdi) {
+             console.log("Kullanıcı adınızı hatalı girdiniz.");
+         } else {
+             console.log("Şifrenizi hatalı girdiniz.");
+         }
+     
+         if (girisHakki > 0) {
+             console.log("Kalan giriş hakkınız: " + girisHakki);
+     } else {
+             console.log("Giriş hakkınız kalmadı.");
+     }
+    }
+    
+    </script>
+</body>
+</html>
